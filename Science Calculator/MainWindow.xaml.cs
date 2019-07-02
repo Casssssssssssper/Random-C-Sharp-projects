@@ -84,23 +84,42 @@ namespace Science_Calculator
 
             private void button15_Click(object sender, EventArgs e)
             {
-                switch (operationPerformed)
-                {
-                    case "+":
-                        textBox_Result.Text = (resultValue + Double.Parse(textBox_Result.Text)).ToString();
-                        break;
-                    case "-":
-                        textBox_Result.Text = (resultValue - Double.Parse(textBox_Result.Text)).ToString();
-                        break;
-                    case "*":
-                        textBox_Result.Text = (resultValue * Double.Parse(textBox_Result.Text)).ToString();
-                        break;
-                    case "/":
-                        textBox_Result.Text = (resultValue / Double.Parse(textBox_Result.Text)).ToString();
-                        break;
-                    default:
-                        break;
-                }
+            switch (operationPerformed)
+            {
+                case "+":
+                    textBox_Result.Text = (resultValue + Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                case "-":
+                    textBox_Result.Text = (resultValue - Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                case "*":
+                    textBox_Result.Text = (resultValue * Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                case "/":
+                    textBox_Result.Text = (resultValue / Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                default:
+                    break;
+
+                //case "+":
+                //    textBox1.Text = (num1 + num2).ToString();
+                //    break;
+                //case "-":
+                //    textBox1.Text = (num1 - num2).ToString();
+                //    break;
+                //case "*":
+                //    textBox1.Text = (num1 * num2).ToString();
+                //    break;
+                //case "/":
+                //    textBox1.Text = (num1 / num2).ToString();
+                //    break;
+                //case "^":
+                //    textBox1.Text = (int.Parse(num1.ToString()) ^ int.Parse(num2.ToString())).ToString();
+                //    break;
+                //case "%":
+                //    textBox1.Text = (num1 % num2).ToString();
+                //    break;
+            }
                 resultValue = Double.Parse(textBox_Result.Text);
                 labelCurrentOperation.Text = "";
             }
