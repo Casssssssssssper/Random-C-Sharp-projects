@@ -44,6 +44,8 @@ namespace Calculator
 
             if (resultValue != 0)
             {
+                // TODO Not handy to put an even handler in an event
+
                 button15.PerformClick();
                 operationPerformed = button.Text;
                 labelCurrentOperation.Text = resultValue + " " + operationPerformed;
@@ -51,11 +53,17 @@ namespace Calculator
             }
             else
             {
+                // TODO Implement "." & "," in parser
 
                 operationPerformed = button.Text;
-                resultValue = Double.Parse(textBox_Result.Text);
+                double d;
+                bool parseResult = double.TryParse(operationPerformed, out d);
+                if (parseResult)
+                {
+                resultValue = int.Parse(textBox_Result.Text);
                 labelCurrentOperation.Text = resultValue + " " + operationPerformed;
                 isOperationPerformed = true;
+                }
             }
         }
 
@@ -88,8 +96,10 @@ namespace Calculator
                     break;
                 default:
                     break;
+
+                    //TODO Devide by 0 error
             }
-            resultValue = Double.Parse(textBox_Result.Text);
+            resultValue = int.Parse(textBox_Result.Text);
             labelCurrentOperation.Text = "";
         }
     }

@@ -5,22 +5,21 @@ namespace QuickDate
 
     internal class Calendar
     {
-
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            DateTime now = GetCurrentDate();
-            Console.WriteLine($"Today's date is {now}");
-            Console.ReadLine();
+            // DateTime now = GetCurrentDate();
+            // Console.WriteLine($"Today's date is {now}");
+            // Console.ReadLine();
         }
 
-        internal static DateTime GetCurrentDate(DateTime date)
-        {
-            return DateTime.Now.Date;
+        //internal static DateTime GetCurrentDate(DateTime date)
+        //{
+        //    return DateTime.Now.Date;
 
-            // https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-projects-solutions?view=vs-2019
+        //    // https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-projects-solutions?view=vs-2019
 
-        }
+        //}
     }
-   
+
 
 }
