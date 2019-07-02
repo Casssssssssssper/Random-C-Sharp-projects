@@ -97,6 +97,25 @@ namespace Calculator
                 default:
                     break;
 
+                //case "+":
+                //    textBox1.Text = (num1 + num2).ToString();
+                //    break;
+                //case "-":
+                //    textBox1.Text = (num1 - num2).ToString();
+                //    break;
+                //case "*":
+                //    textBox1.Text = (num1 * num2).ToString();
+                //    break;
+                //case "/":
+                //    textBox1.Text = (num1 / num2).ToString();
+                //    break;
+                //case "^":
+                //    textBox1.Text = (int.Parse(num1.ToString()) ^ int.Parse(num2.ToString())).ToString();
+                //    break;
+                //case "%":
+                //    textBox1.Text = (num1 % num2).ToString();
+                //    break;
+
                     //TODO Devide by 0 error
             }
             resultValue = int.Parse(textBox_Result.Text);
