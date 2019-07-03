@@ -23,106 +23,124 @@ namespace Science_Calculator
         public MainWindow()
         {
             InitializeComponent();
+
+
+            string[] operators;
+            string[] tokens;
+            string[] output;
         }
 
-       
-            int resultValue = 0;
+        // While there are tokens to read, read token
+        // if its a number add it to the queue
+
+
+
+
+        // https://www.youtube.com/watch?v=QzVVjboyb0s
+
+
+
+
+
+        int resultValue = 0;
             String operationPerformed = "";
             bool isOperationPerformed = false;
-           
 
-            private void button_click(object sender, EventArgs e)
-            {
-                if ((textBox_Result.Text == "0") || (isOperationPerformed))
-                    textBox_Result.Clear();
-
-                isOperationPerformed = false;
-                Button button = (Button)sender;
-                if (button.Text == ".")
-                {
-                    if (!textBox_Result.Text.Contains("."))
-                        textBox_Result.Text = textBox_Result.Text + button.Text;
-
-                }
-                else
-                    textBox_Result.Text = textBox_Result.Text + button.Text;
+        
 
 
-            }
+        //private void button_click(object sender, EventArgs e)
+        //{
+        //    if ((textBox_Result.Text == "0") || (isOperationPerformed))
+        //        textBox_Result.Clear();
 
-            private void operator_click(object sender, EventArgs e)
-            {
-                Button button = (Button)sender;
+        //    isOperationPerformed = false;
+        //    Button button = (Button)sender;
+        //    if (button.Text == ".")
+        //    {
+        //        if (!textBox_Result.Text.Contains("."))
+        //            textBox_Result.Text = textBox_Result.Text + button.Text;
 
-                if (resultValue != 0)
-                {
-                    button15.PerformClick();
-                    operationPerformed = button.Text;
-                    labelCurrentOperation.Text = resultValue + " " + operationPerformed;
-                    isOperationPerformed = true;
-                }
-                else
-                {
+        //    }
+        //    else
+        //        textBox_Result.Text = textBox_Result.Text + button.Text;
 
-                    operationPerformed = button.Text;
-                    resultValue = Double.Parse(textBox_Result.Text);
-                    labelCurrentOperation.Text = resultValue + " " + operationPerformed;
-                    isOperationPerformed = true;
-                }
-            }
 
-            private void button4_Click(object sender, EventArgs e)
-            {
-                textBox_Result.Text = "0";
-            }
+        //}
 
-            private void button5_Click(object sender, EventArgs e)
-            {
-                textBox_Result.Text = "0";
-                resultValue = 0;
-            }
+        //private void operator_click(object sender, EventArgs e)
+        //{
+        //    Button button = (Button)sender;
 
-            private void button15_Click(object sender, EventArgs e)
-            {
-            switch (operationPerformed)
-            {
-                case "+":
-                    textBox_Result.Text = (resultValue + Double.Parse(textBox_Result.Text)).ToString();
-                    break;
-                case "-":
-                    textBox_Result.Text = (resultValue - Double.Parse(textBox_Result.Text)).ToString();
-                    break;
-                case "*":
-                    textBox_Result.Text = (resultValue * Double.Parse(textBox_Result.Text)).ToString();
-                    break;
-                case "/":
-                    textBox_Result.Text = (resultValue / Double.Parse(textBox_Result.Text)).ToString();
-                    break;
-                default:
-                    break;
+        //    if (resultValue != 0)
+        //    {
+        //        button15.PerformClick();
+        //        operationPerformed = button.Text;
+        //        labelCurrentOperation.Text = resultValue + " " + operationPerformed;
+        //        isOperationPerformed = true;
+        //    }
+        //    else
+        //    {
 
-                    //case "+":
-                    //    textBox1.Text = (num1 + num2).ToString();
-                    //    break;
-                    //case "-":
-                    //    textBox1.Text = (num1 - num2).ToString();
-                    //    break;
-                    //case "*":
-                    //    textBox1.Text = (num1 * num2).ToString();
-                    //    break;
-                    //case "/":
-                    //    textBox1.Text = (num1 / num2).ToString();
-                    //    break;
-                    //case "^":
-                    //    textBox1.Text = (int.Parse(num1.ToString()) ^ int.Parse(num2.ToString())).ToString();
-                    //    break;
-                    //case "%":
-                    //    textBox1.Text = (num1 % num2).ToString();
-                    //    break;
+        //        operationPerformed = button.Text;
+        //        resultValue = Double.Parse(textBox_Result.Text);
+        //        labelCurrentOperation.Text = resultValue + " " + operationPerformed;
+        //        isOperationPerformed = true;
+        //    }
+        //}
 
-                   
+        //private void button4_Click(object sender, EventArgs e)
+        //{
+        //    textBox_Result.Text = "0";
+        //}
 
-    
+        //private void button5_Click(object sender, EventArgs e)
+        //{
+        //    textBox_Result.Text = "0";
+        //    resultValue = 0;
+        //}
+
+        //private void button15_Click(object sender, EventArgs e)
+        //{
+        //switch (operationPerformed)
+        //{
+        //    case "+":
+        //        textBox_Result.Text = (resultValue + Double.Parse(textBox_Result.Text)).ToString();
+        //        break;
+        //    case "-":
+        //        textBox_Result.Text = (resultValue - Double.Parse(textBox_Result.Text)).ToString();
+        //        break;
+        //    case "*":
+        //        textBox_Result.Text = (resultValue * Double.Parse(textBox_Result.Text)).ToString();
+        //        break;
+        //    case "/":
+        //        textBox_Result.Text = (resultValue / Double.Parse(textBox_Result.Text)).ToString();
+        //        break;
+        //    default:
+        //        break;
+
+        //case "+":
+        //    textBox1.Text = (num1 + num2).ToString();
+        //    break;
+        //case "-":
+        //    textBox1.Text = (num1 - num2).ToString();
+        //    break;
+        //case "*":
+        //    textBox1.Text = (num1 * num2).ToString();
+        //    break;
+        //case "/":
+        //    textBox1.Text = (num1 / num2).ToString();
+        //    break;
+        //case "^":
+        //    textBox1.Text = (int.Parse(num1.ToString()) ^ int.Parse(num2.ToString())).ToString();
+        //    break;
+        //case "%":
+        //    textBox1.Text = (num1 % num2).ToString();
+        //    break;
+
+
+
+
         //    decimal num1;
         //    decimal num2;
         //    string operation;
@@ -307,10 +325,9 @@ namespace Science_Calculator
         //        textBox1.Text = "0";
         //    }
         //}
-  
-resultValue = Double.Parse(textBox_Result.Text);
-                labelCurrentOperation.Text = "";
-            }
-       
+
+        //resultValue = Double.Parse(textBox_Result.Text);
+        //                labelCurrentOperation.Text = "";
     }
+       
 }
