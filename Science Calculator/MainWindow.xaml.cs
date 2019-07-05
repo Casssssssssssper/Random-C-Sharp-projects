@@ -25,13 +25,27 @@ namespace Science_Calculator
             InitializeComponent();
 
 
-            string[] operators;
-            string[] tokens;
-            string[] output;
+            string[] operators; // Stack for Operators
+            string[] tokens; // Array
+            string[] output; // Output = Queue
+
+            int testValue = 0;
+            String operationPerformed = "";
+            bool isOperationPerformed = false;
         }
 
         // While there are tokens to read, read token
         // if its a number add it to the queue
+        // if its an operator:
+        // while there is an operator on top of the stack with freater proecedence:
+        // pop operators from the stack ontop of the output queue
+        // push the current operator onto the stack
+        // if its a left bracket push it at the top of the stack
+        // if its a left bracket
+        // while there is not a left bracket at the top of the stack
+        // Pop operators from the stack onto the output queue
+        // Pop he left bracket from the stack but discard it
+        // while there is operators on the stack, pop them to the queue
 
 
 
@@ -42,9 +56,7 @@ namespace Science_Calculator
 
 
 
-        int resultValue = 0;
-            String operationPerformed = "";
-            bool isOperationPerformed = false;
+       
 
         
 
