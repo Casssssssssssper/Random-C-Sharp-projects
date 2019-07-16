@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace Science_Calculator
 {
@@ -23,15 +10,6 @@ namespace Science_Calculator
         public MainWindow()
         {
             InitializeComponent();
-
-
-            string[] operators; // Stack for Operators
-            string[] tokens; // Array
-            string[] output; // Output = Queue
-
-            int testValue = 0;
-            String operationPerformed = "";
-            bool isOperationPerformed = false;
         }
 
         // While there are tokens to read, read token
@@ -56,9 +34,9 @@ namespace Science_Calculator
 
 
 
-       
 
-        
+
+
 
 
         //private void button_click(object sender, EventArgs e)
@@ -340,6 +318,53 @@ namespace Science_Calculator
 
         //resultValue = Double.Parse(textBox_Result.Text);
         //                labelCurrentOperation.Text = "";
+
+
+        /*
+
+        How to calculate sinh, cosh, and tanh?
+
+        All of these functions can be defined in terms of exponential functions. If you're not sure what these are, head to our exponent calculator for more detailed explanation.
+
+        If you want to calculate sinh(x) - the hyperbolic sine - you need to use the following formula:
+
+        sinh(x) = (eˣ - e⁻ˣ) / 2
+
+        The formula for calculating cosh(x) - the hyperbolic cosine - is quite similar:
+
+        cosh(x) = (eˣ + e⁻ˣ) / 2
+
+        You can calculate tanh(x), coth(x), sech(x) and csch(x) (hyperbolic tangent, cotangent, secant and cosecant) analogically as in trigonometry:
+
+        tanh(x) = sinh(x) / cosh(x) = (eˣ - e⁻ˣ) / (eˣ + e⁻ˣ)
+
+        coth(x) = cosh(x) / sinh(x) = (eˣ + e⁻ˣ) / (eˣ - e⁻ˣ), x ≠ 0
+
+        sech(x) = 1 / cosh(x) = 2/ (eˣ + e⁻ˣ)
+
+        csch(x) = 1 / sinh(x) = 2 / (eˣ - e⁻ˣ), x ≠ 0
+
+
+
+        Our hyperbolic functions calculator is also able to find the values of inverse hyperbolic functions. All you have to do is input the value of one of the functions (for example, sinh(x) or tanh(x)), and this tool will automatically return the value of x.
+
+The formulas used to compute inverse hyperbolic functions are shown below.
+
+arsinh(x) = ln [x + √(x² + 1)]
+
+arcosh(x) = ln [x + √(x² - 1)]
+
+artanh(x) = 0.5 * ln [(1 + x) / (1 - x)]
+
+arcoth(x) = 0.5 * ln [(x + 1) / (x - 1)]
+
+arsech(x) = ln [(1 + √(1 - x²)) / x]
+
+arcsch(x) = ln [1 / x + √(1 / x² + 1)]
+
+
+         */
+
     }
-       
+
 }
