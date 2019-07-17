@@ -12,6 +12,7 @@ namespace Science_Calculator
             InitializeComponent();
         }
 
+        
         // While there are tokens to read, read token
         // if its a number add it to the queue
         // if its an operator:
