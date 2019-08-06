@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science Calculator", "Scien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorPro", "CalculatorPro\CalculatorPro.csproj", "{35C18E3C-3116-46F2-A9F8-041AF9F3EDBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code Snippets", "Code Snippets\Code Snippets.csproj", "{5D62A02D-8A5E-40C3-8F4F-FAFBEB9C842C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{35C18E3C-3116-46F2-A9F8-041AF9F3EDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35C18E3C-3116-46F2-A9F8-041AF9F3EDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35C18E3C-3116-46F2-A9F8-041AF9F3EDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D62A02D-8A5E-40C3-8F4F-FAFBEB9C842C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D62A02D-8A5E-40C3-8F4F-FAFBEB9C842C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D62A02D-8A5E-40C3-8F4F-FAFBEB9C842C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D62A02D-8A5E-40C3-8F4F-FAFBEB9C842C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
