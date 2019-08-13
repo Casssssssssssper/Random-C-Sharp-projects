@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creating A Task.cs" />
+    <Compile Include="ExceptionsPLINQ.cs" />
+    <Compile Include="ManagingParallelForLoop.cs" />
+    <Compile Include="ParallelForEach.cs" />
     <Compile Include="Parallel_Invoke.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="ParallelLINQquery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
