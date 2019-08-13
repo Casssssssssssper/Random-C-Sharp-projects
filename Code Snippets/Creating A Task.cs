@@ -15,8 +15,11 @@ namespace Code_Snippets
 
         private static void Main(string[] args)
         {
-            Task newTask = new Task(() => DoWork());
-            newTask.Start();
+            //Task newTask = new Task(() => DoWork());
+            //newTask.Start();
+            //newTask.Wait();
+
+            Task newTask = Task.Run(() => DoWork());
             newTask.Wait();
         }
     }
