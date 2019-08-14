@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attached child task.cs" />
+    <Compile Include="continuation tasks.cs" />
     <Compile Include="Creating A Task.cs" />
     <Compile Include="ExceptionsPLINQ.cs" />
     <Compile Include="ManagingParallelForLoop.cs" />
@@ -53,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task Await.cs" />
     <Compile Include="Task Returning a value.cs" />
+    <Compile Include="ThreadsAndStuff.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
