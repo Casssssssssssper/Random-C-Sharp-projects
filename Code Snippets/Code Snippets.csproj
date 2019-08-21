@@ -56,6 +56,7 @@
     <Compile Include="Task Await.cs" />
     <Compile Include="Task Returning a value.cs" />
     <Compile Include="ThreadsAndStuff.cs" />
+    <Compile Include="TypeConversion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
