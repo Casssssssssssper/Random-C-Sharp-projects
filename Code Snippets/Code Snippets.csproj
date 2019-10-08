@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attached child task.cs" />
+    <Compile Include="CompassCollection.cs" />
     <Compile Include="continuation tasks.cs" />
     <Compile Include="Creating A Task.cs" />
     <Compile Include="ExceptionsPLINQ.cs" />
