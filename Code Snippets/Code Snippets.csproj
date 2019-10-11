@@ -58,6 +58,7 @@
     <Compile Include="Task Returning a value.cs" />
     <Compile Include="ThreadsAndStuff.cs" />
     <Compile Include="TypeConversion.cs" />
+    <Compile Include="ValuesAndReferenceTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
