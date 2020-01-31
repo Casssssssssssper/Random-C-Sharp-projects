@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
+using static System.Math;
+using static System.String;
 
 namespace Code_Snippets
 {
@@ -18,6 +21,24 @@ namespace Code_Snippets
             if (float.IsInfinity(small))
             {
                 throw new OverflowException();
+            }
+
+            Write("Enter a circle's radius: ");
+            var input = ReadLine();
+            if (!IsNullOrEmpty(input) && double.TryParse(input, out var radius))
+            {
+                var c = new Circle(radius);
+
+                string s = "\nInformation about the circle:\n";
+                s = s + Format("   Radius: {0:N2}\n", c.Radius);
+                s = s + Format("   Diameter: {0:N2}\n", c.Diameter);
+                s = s + Format("   Circumference: {0:N2}\n", c.Circumference);
+                s = s + Format("   Area: {0:N2}\n", c.Area);
+                WriteLine(s);
+            }
+            else
+            {
+                WriteLine("Invalid input...");
             }
         }
 
