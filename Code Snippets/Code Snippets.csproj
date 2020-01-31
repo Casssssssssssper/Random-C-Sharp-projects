@@ -58,6 +58,7 @@
     <Compile Include="ParallelLINQquery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegularExpressions.cs" />
     <Compile Include="Task Await.cs" />
     <Compile Include="Task Returning a value.cs" />
     <Compile Include="TestClass.cs" />
