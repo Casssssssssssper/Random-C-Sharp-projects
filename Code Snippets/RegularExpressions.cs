@@ -9,6 +9,6 @@ namespace Code_Snippets
 {
     class ArrayTypeMismatchException
     {
-        private Regex(@"\d{3}-\d{8}-\d{3}").private ArrayTypeMismatchException(SqlString);
+        //private Regex(@"\d{3}-\d{8}-\d{3}").private ArrayTypeMismatchException(SqlString);
     }
 }
