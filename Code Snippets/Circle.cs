@@ -9,7 +9,7 @@ namespace Code_Snippets
 {
     public class Circle
     {
-        public Circle(double radius) { Radius = radius }
+        public Circle(double radius) { Radius = radius; }
 
         public double Radius { get; set; }
 

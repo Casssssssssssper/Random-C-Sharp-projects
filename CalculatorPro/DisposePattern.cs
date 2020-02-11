@@ -8,7 +8,7 @@ namespace CalculatorPro
 {
     class Minimal_DisposePattern:IDisposable
     {
-        private SqlConnection connection = new SqlConnection();
+        
 
         public void Dispose()
         {

@@ -1,7 +1,0 @@
-C:\Users\Casper\source\repos\Random C Sharp projects\QuickDate\obj\Debug\QuickDate.csprojAssemblyReference.cache
-C:\Users\Casper\source\repos\Random C Sharp projects\QuickDate\obj\Debug\QuickDate.csproj.CoreCompileInputs.cache
-C:\Users\Casper\source\repos\Random C Sharp projects\QuickDate\bin\Debug\QuickDate.exe.config
-C:\Users\Casper\source\repos\Random C Sharp projects\QuickDate\bin\Debug\QuickDate.exe
-C:\Users\Casper\source\repos\Random C Sharp projects\QuickDate\bin\Debug\QuickDate.pdb
-C:\Users\Casper\source\repos\Random C Sharp projects\QuickDate\obj\Debug\QuickDate.exe
-C:\Users\Casper\source\repos\Random C Sharp projects\QuickDate\obj\Debug\QuickDate.pdb

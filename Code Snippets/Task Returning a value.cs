@@ -16,12 +16,12 @@ namespace Code_Snippets
 
         static void Main(string[] args)
         {
-            Task<int> task = task.Run(() =>
-            {
-                return CalculateResult();
-            });
+            //Task<int> task = task.Run(() =>
+            //{
+            //    return CalculateResult();
+            //});
 
-            Console.WriteLine(task.Result);
+            //Console.WriteLine(task.Result);
 
             Console.WriteLine("Finished processing. Press a key to end.");
             Console.ReadKey();

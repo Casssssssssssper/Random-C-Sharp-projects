@@ -26,10 +26,10 @@ namespace Code_Snippets
                 // making a locacal copy of the loop count.
                 // correct task number is passed into lambda expression
 
-                Task[i] = Task.Run(() => DoWork(taskNum));
+                //Task[i] = Task.Run(() => DoWork(taskNum));
                 //Asynchronous task so this requires a Task.WaitAll method.
             }
-            Task.WaitAll(Task);
+            //Task.WaitAll(Task);
 
             Console.WriteLine("Finished	processing.	Press a key	to end the application.");
             Console.ReadKey();
